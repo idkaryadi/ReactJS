@@ -1,0 +1,186 @@
+/* bagian awal */
+header{
+    /* height: 95px; */
+    padding: 0 0 20px;
+    width: 100%;
+    background-color: white;
+}
+.shadow-und{
+    -webkit-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+    box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+}
+.logo{
+    width: 133px;
+    margin-left: 106px;
+    margin-top: 16px;
+}
+
+ul{
+    text-align: -webkit-right;
+    padding-top: 42px;
+    padding-right: 105;
+}
+
+li{
+    display: inline;
+    padding-right: 50px;
+    color: #19345E;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+}
+.link-about{
+    color: #f47522;
+} 
+/* bagian tengah */
+.img-background{
+    background-image: url("../img/img-header@2x.png");
+    width: 100%;
+    height: 515px;
+}
+
+.col-4{
+    font-family: 'Muli', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.profile{
+    margin-top: 50px; /*gak bisa make padding: */
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.location{
+    font-size: 13px;
+    font-weight: lighter;
+}
+.img-loc{
+    width: 16.63px;
+}
+.role{
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-download{
+    background-color: #f47522;
+    font-size: 16px;
+    font-weight: bold;
+    width: 192;
+    height: 53;
+    transition: all 1s ease;
+}
+.btn-download:hover{
+    background: white;
+    color: #f47522;
+}
+
+.long-square{
+    /* width: 1022px;
+    height: 358px; */
+    float: none;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 15pt;
+    /* padding-right: 105px;
+    padding-left: 105px;
+    padding-bottom: 100px; */
+    margin-right: 105px;
+    margin-left: 105px;
+    margin-bottom: 100px;
+}
+.white{
+    background-color:white;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+.shadow-box{
+    -webkit-box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.33);
+    box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.33);
+}
+.about-me{
+    margin-left: 46px;
+    font-family: "Muli", sans-serif;
+    color: #19345E;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 31px;
+}
+article{
+    /* width: 370px; */
+    padding-right: 47px;
+    padding-right: 20px;
+    /* margin-left: 46px; */
+    font-family: "Muli", sans-serif;
+    font-size: 17px;
+}
+.alterra{
+    color: #f47522;
+}
+.information{
+    font-family: "Muli", sans-serif;
+    color: #19345E;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 31px;
+}
+tr{
+    width: 388px;
+}
+table{
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
+    color: #414141;
+    padding-right: 57px;
+}
+/* bagian bawah */
+footer{
+    width: 100%;
+    background-color: #19345E;
+}
+.white-logo{
+    width: 133px;
+    margin-top: 44px;
+    margin-left: 106px;
+}
+.copyright{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+    margin-top: 10px;
+    margin-left: 106px;
+    color: white;
+}
+.ikon{
+    /* margin-left: 100px; */
+    text-align: -webkit-right;
+    height: 20px;
+    padding-right: 20px;
+}
+.sosmed-box{
+    text-align: -webkit-right;
+}
+
+.sosmed{
+    font-family: 'Arial';
+    font-size: 12pt;
+    color: white;
+    padding-right: 100px;
+}
+
+.follow{
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: 43px;
+    font-weight: bold;
+    text-align: -webkit-right;
+    padding-right: 100px;
+}
