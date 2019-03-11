@@ -1,0 +1,88 @@
+/* bagian awal */
+header{
+    /* height: 95px; */
+    padding: 0 0 20px;
+    width: 100%;
+    background-color: white;
+}
+.shadow-und{
+    -webkit-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+    box-shadow: 0px 10px 16px -9px rgba(0,0,0,0.33);
+}
+.logo{
+    width: 133px;
+    margin-left: 106px;
+    margin-top: 16px;
+}
+
+ul{
+    text-align: -webkit-right;
+    padding-top: 42px;
+    padding-right: 105;
+}
+
+li{
+    display: inline;
+    padding-right: 50px;
+    color: #19345E;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+}
+.link-about{
+    color: #f47522;
+} 
+
+/* bagian tengah */
+.col-md-4{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #575D63;
+    margin: 3% 0 5% 0;
+    padding: 30px;
+}
+
+/* bagian bawah */
+footer{
+    width: 100%;
+    background-color: #19345E;
+}
+.white-logo{
+    width: 133px;
+    margin-top: 44px;
+    margin-left: 106px;
+}
+.copyright{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+    margin-top: 10px;
+    margin-left: 106px;
+    color: white;
+}
+.ikon{
+    /* margin-left: 100px; */
+    text-align: -webkit-right;
+    height: 20px;
+    padding-right: 20px;
+}
+.sosmed-box{
+    text-align: -webkit-right;
+}
+
+.sosmed{
+    font-family: 'Arial';
+    font-size: 12pt;
+    color: white;
+    padding-right: 100px;
+}
+
+.follow{
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: 43px;
+    font-weight: bold;
+    text-align: -webkit-right;
+    padding-right: 100px;
+}

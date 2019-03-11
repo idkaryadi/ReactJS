@@ -1,0 +1,69 @@
+body{
+    font-family: Muli, Bold;
+    margin: 0;
+}
+
+.left{
+    background-image: url("../../assets/img/side-view.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+    margin: 0;
+    width: 589px;
+    height: 792px;
+    padding-inline-start: 0px;
+}
+
+.right{
+    margin: 0;
+}
+
+.warna{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    opacity: 0.8;
+    background-color: #19345E;
+    background-size: cover;
+    z-index: 1;
+}
+
+.logo1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+
+h4{
+    float: left;
+    color: #19345E;
+}
+
+.dropdown-menu{
+    margin: 0px;
+}
+
+h6{
+    color: #19345E;
+}
+
+.submitbutton{
+    margin: 10px 10px 0px 0px;
+    width: 100%;
+    height: 53px;
+}
+
+.btn{
+    color: white;
+    background-color: #F47522;
+    border-radius: 10px;
+}
