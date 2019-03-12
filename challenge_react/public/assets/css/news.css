@@ -20,14 +20,14 @@
 }
 
 .head-top-news{
-    padding: 0 8px;
+    /* padding-top: 130px; */
     margin: 2px 5px;
     font-size: 18px;
     color: darkgreen;
 }
 
 .top-news-item{
-    border-top: solid 1px gray;
+    /* border-top: solid 1px gray; */
     padding: 10px 10px;
     color: green;
     /* width: 4/11*100%; */

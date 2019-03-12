@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TopNews from './TopNews'
 import News from './News'
 import Search from './Search'
+// import NameForm from './Search'
 
 // export default ListNews;
 
@@ -13,13 +14,14 @@ class ContentNews extends Component {
                     <div className="row">
                         <div className="col-md-1"></div>
                         <div className="col-md-4">
-                            <Search />
-                            <div className="row head-top-news">
+                            <Search handleChange={this.props.handleChange}/>
+                            {/* <NameForm /> */}
+                            <div className="row  head-top-news">
                                 <span className="mr-auto"><strong>BERITA TERKINI</strong></span>
                                 <span className="ml-auto">Lihat Semua</span>
                             </div>
-                                {this.props.sourceList.map((item, key) => {
-                                return <TopNews key={key} numb={key + 1} title={item.title} />;
+                            {this.props.sourceList.map((item, key) => {
+                                return <TopNews key={key} numb={key + 1} url={item.url} title={item.title} />;
                             })}
                         </div>
                         <div className="col-md-6">

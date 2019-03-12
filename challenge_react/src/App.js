@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import NewsNavBar from './component/NewsNavBar'
-import Search from './component/Search';
+// import NewsNavBar from './component/NewsNavBar'
+import Navigation from './component/Navigation'
+import NameForm from './component/Search';
 import News from './component/News'
 import TopNews from './component/TopNews'
 import ContentNews from './component/ContentNews'
@@ -20,7 +21,7 @@ class AppX extends Component {
         {/* <About/> */}
         {/* <Footer/> */}
 
-        <NewsNavBar />
+        <Navigation />
         {/* <TopNews/> */}
         {/* <ContentNews/> */}
       </div>
@@ -92,7 +93,7 @@ class App extends Component {
     const { listNews, listSource, username, IsLogin } = this.state;
     return (
       <div className="App">
-        <NewsNavBar />
+        <Navigation />
 
         {/* <div className="row">
             <div className="col-md-1"></div>
