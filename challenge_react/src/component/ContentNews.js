@@ -1,72 +1,38 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import TopNews from './TopNews'
+import News from './News'
+import Search from './Search'
+
+// export default ListNews;
 
 class ContentNews extends Component {
     render() {
         return (
-            <div>
                 <div className="container-fluid">
-                <div className="row">
-                <div className="col-md-5"></div>
-                <div className="col-md-6">
-                    <div className="news">
-                        <div className="news-item">
-                            <img src="./assets/img/mui.jpg" className="news-picture" />
-                            <span className="news-title"><strong>MUI DKI: Munajat 212 Bukan Tanggung Jawab Kami</strong></span><br />
-                            <span className="news-author">Senin, 11 Maret 2019</span><br />
-                            <span className="news-author">Author: Kompas.com</span>
-                            <p>
-                                JAKARTA, KOMPAS.com — Majelis Ulama Indonesia ( MUI) DKI Jakarta memenuhi panggilan Bawaslu DKI untuk memberikan klarifikasi terkait dugaan pelanggaran pemilu pada kegiatan Munajat 212.
-                            </p>
-                            <a href="#">Selengkapnya...</a>
-                            <div className="news-footer">
-                                <a href="#"><img className="icon" src="./assets/img/ico/like.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/dislike.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/share.png" /></a>
+                    <div className="row">
+                        <div className="col-md-1"></div>
+                        <div className="col-md-4">
+                            <Search />
+                            <div className="row head-top-news">
+                                <span className="mr-auto"><strong>BERITA TERKINI</strong></span>
+                                <span className="ml-auto">Lihat Semua</span>
                             </div>
+                                {this.props.sourceList.map((item, key) => {
+                                return <TopNews key={key} numb={key + 1} title={item.title} />;
+                            })}
                         </div>
-                    </div>
-                    <div className="news">
-                        <div className="news-item">
-                            <img src="./assets/img/mahasiswa.jpg" className="news-picture" />
-                            <span className="news-title"><strong>Peluang Usaha Modal Kecil Untung Besar Untuk Mahasiswa</strong></span><br />
-                            <span className="news-author">Senin, 5 Maret 2019</span><br />
-                            <span className="news-author">Author: Sepulsa.com</span>
-                            <p>
-                                JAKARTA, KOMPAS.com — Majelis Ulama Indonesia ( MUI) DKI Jakarta memenuhi panggilan Bawaslu DKI untuk memberikan klarifikasi terkait dugaan pelanggaran pemilu pada kegiatan Munajat 212.
-                            </p>
-                            <a href="#">Selengkapnya...</a>
-                            <div className="news-footer">
-                                <a href="#"><img className="icon" src="./assets/img/ico/like.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/dislike.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/share.png" /></a>
-                            </div>
+                        <div className="col-md-6">
+                            {this.props.newsList.map((item, key) => {
+                                const src_img = item.urlToImage === null ? "" : item.urlToImage;
+                                const content = item.urlToImage !== null ? item.content : "";
+                                return <News key={key} title={item.title} img={src_img} content={content} publish={item.publishedAt} author={item.author} url={item.url} />;
+                            })}
                         </div>
+                        <div className="col-md-1"></div>
                     </div>
-                    <div className="news">
-                        <div className="news-item">
-                            <img src="./assets/img/pesawat.jpg" className="news-picture" />
-                            <span className="news-title"><strong>Kemenhub Larang Sementara Penerbangan Boeing 737 Max 8</strong></span><br />
-                            <span className="news-author">Senin, 11 Maret 2019</span><br />
-                            <span className="news-author">Author: Tirto.com</span>
-                            <p>
-                                Direktorat Jenderal Perhubungan Udara Kementerian Perhubungan memutuskan untuk melarang terbang sementara pesawat Boeing 737-8 MAX di Indonesia. Direktur Jenderal Perhubungan Udara, Polana B. Pramesti mengatakan, langkah tersebut diambil menyusul jatuhnya Pesawat Ethiopian Airlines berjenis Boeing 737-8 MAX.
-                            </p>
-                            <a href="#">Selengkapnya...</a>
-                            <div className="news-footer">
-                                <a href="#"><img className="icon" src="./assets/img/ico/like.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/dislike.png" /></a>
-                                <a href="#"><img className="icon" src="./assets/img/ico/share.png" /></a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div className="col-md-1"></div>
-                </div>
-                </div>
-            </div>
         );
     }
 }
-
 export default ContentNews;
