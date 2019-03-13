@@ -37,10 +37,13 @@ const NewsNavBar = props => {
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <Link to="/" onClick={() => props.postSignout()} className="nav-link">Keluar<span className="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/profile">Profile<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/signin">Masuk<span className="sr-only">(current)</span></Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/" onClick={() => props.postSignout()} className="nav-link">Keluar<span className="sr-only">(current)</span></Link>
                         </li>
                     </ul>
                 </div>

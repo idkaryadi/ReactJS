@@ -15,26 +15,27 @@ class SignIn extends Component {
             password: password
         };
         const self = this;
-        axios
-            .post("https://atareact.free.beeceptor.com/auth", data)
-            .then(function (response) {
-                console.log(response.data);
-                if (response.data.hasOwnProperty("api_key")) {
-                    localStorage.setItem("api_key", response.data.api_key);
-                    localStorage.setItem("is_login", true);
-                    localStorage.setItem("full_name", response.data.full_name);
-                    localStorage.setItem("email", response.data.email);
-                    self.props.history.push("/profile")
-                }
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
+        localStorage.setItem("is_login", true);
+        self.props.history.push("/profile")
+        // axios
+        //     .post("https://ata2react.free.beeceptor.com/auth", data)
+        //     .then(function (response) {
+        //         console.log(response.data);
+        //         if (response.data.hasOwnProperty("api_key")) {
+        //             localStorage.setItem("api_key", response.data.api_key);
+        //             localStorage.setItem("is_login", true);
+        //             localStorage.setItem("full_name", response.data.full_name);
+        //             localStorage.setItem("email", response.data.email);
+        //             self.props.history.push("/profile")
+        //         }
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     })
     };
     render() {
         console.log("state", this.state);
         return (
-
             <section className="content signin text-center">
                 <form onSubmit={e => e.preventDefault()}>
                     <h1 style={{ marginBottom: "2%" }}>Sign In</h1>

@@ -31,7 +31,7 @@ class News extends Component {
                     <img src={this.props.img} className="news-picture" />
                     <span className="news-title"><strong>{this.props.title}</strong></span><br />
                     <span className="news-author">{this.props.publish}</span><br />
-                    <span className="news-author">{this.props.author}</span>
+                    <span className="news-author">Author: {this.props.author}</span>
                     <p>
                         {this.props.content}
                     </p>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ContentNews from './../component/ContentNews'
+import { Redirect } from "react-router-dom"
 
 const apiKey = '8d167aa8e73146a096e180cad276f266'
-const urlHeadline = "https://newsapi.org/v2/top-headlines?country=id&category="+"health"+"&apiKey=" + apiKey
+const urlHeadline = "https://newsapi.org/v2/top-headlines?country=id&category=" + "health" + "&apiKey=" + apiKey
 // const urlSource = "https://newsapi.org/v2/sources?apiKey=" + apiKey + "&country=us"
 const urlSource = "https://newsapi.org/v2/everything?q=today&apiKey=" + apiKey
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
       listNews: [],
       listSource: [],
       username: '',
-      IsLogin: false
+      // IsLogin: false
+      is_login: JSON.parse(localStorage.getItem("is_login"))
     };
   }
 
@@ -34,12 +36,16 @@ class App extends Component {
 
   render() {
     console.log("here")
-    const { listNews, listSource, username, IsLogin } = this.state;
-    return (
-      <div className="App">
-        <ContentNews sourceList={listSource} newsList={listNews} />
-      </div>
-    );
+    const { listNews, listSource, username, is_login } = this.state;
+    if (is_login === false || is_login === null) {
+      return <Redirect to={{ pathname: "/signin" }} />
+    } else {
+      return (
+        <div className="App">
+          <ContentNews sourceList={listSource} newsList={listNews} />
+        </div>
+      );
+    }
   }
 }
 

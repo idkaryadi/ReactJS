@@ -10,7 +10,8 @@ import NewsNavBar from "./component/NewsNavBar";
 
 class AppAjax extends Component{
     postSignout = () =>{
-        localStorage.removeItem("is_login");
+        localStorage.setItem("is_login", false);
+        // localStorage.removeItem("is_login");
         // localStorage.clear()
         this.props.history.push("/");
     };
