@@ -27,7 +27,7 @@ class ContentNews extends Component {
                         <div className="col-md-6">
                             {this.props.newsList.slice(0, 10).map((item, key) => {
                                 const src_img = item.urlToImage === null ? "" : item.urlToImage;
-                                const content = item.urlToImage !== null ? item.content : "";
+                                const content = item.content !== null ? item.content : "";
                                 return <News key={key} title={item.title} img={src_img} content={content} publish={item.publishedAt} author={item.author} url={item.url} />;
                             })}
                         </div>
