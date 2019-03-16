@@ -9,7 +9,7 @@ import { withRouter } from "react-router-dom";
 class App extends Component {
   componentDidMount = () => {
     // this.props.getCategory()
-    console.log(window.location.pathname)
+    console.log("lokasi",window.location.pathname)
     this.props.getNews("")
   }
 

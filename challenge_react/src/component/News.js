@@ -33,7 +33,7 @@ class News extends Component {
                     <span className="news-author">{this.props.publish}</span><br />
                     <span className="news-author">Author: {this.props.author}</span>
                     <p>
-                        {this.props.content}
+                        {this.props.content.slice(0,260)}
                     </p>
                     <a href={this.props.url}>Selengkapnya...</a>
                     <div className="news-footer">

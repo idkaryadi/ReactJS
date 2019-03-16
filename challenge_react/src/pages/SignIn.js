@@ -36,6 +36,9 @@ class SignIn extends Component {
                     <button style={{ marginRight: "2%" }} onClick={() => this.doLogin()}>SignIn</button>
                     <button type="reset">Reset</button>
                 </form>
+                <div className="text-center" style={{marginTop:"2%"}}>
+                    Powered By : <a href="https://newsapi.org">News Api</a>
+                </div>
             </section>
         );
     }

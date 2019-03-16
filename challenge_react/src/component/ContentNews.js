@@ -20,12 +20,12 @@ class ContentNews extends Component {
                                 <span className="mr-auto"><strong>BERITA TERKINI</strong></span>
                                 <span className="ml-auto">Lihat Semua</span>
                             </div>
-                            {this.props.sourceList.map((item, key) => {
+                            {this.props.sourceList.slice(0, 5).map((item, key) => {
                                 return <TopNews key={key} numb={key + 1} url={item.url} title={item.title} />;
                             })}
                         </div>
                         <div className="col-md-6">
-                            {this.props.newsList.map((item, key) => {
+                            {this.props.newsList.slice(0, 10).map((item, key) => {
                                 const src_img = item.urlToImage === null ? "" : item.urlToImage;
                                 const content = item.urlToImage !== null ? item.content : "";
                                 return <News key={key} title={item.title} img={src_img} content={content} publish={item.publishedAt} author={item.author} url={item.url} />;
